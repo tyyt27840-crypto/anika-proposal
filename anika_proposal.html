@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<title>For Anika ♡ | From Tuhin</title>
+<style>
+  :root { --gold:#e8c77a; --gold2:#fff0bd; --ink:#080808; --muted:#c6c0b3; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0; min-height:100vh; overflow-x:hidden; color:#f8f3e8;
+    background:radial-gradient(ellipse at 50% 0%, #292116 0%, #100f0d 40%, #050505 78%);
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  #stars, #hearts { position:fixed; inset:0; pointer-events:none; overflow:hidden; }
+  #stars { z-index:0; }
+  #hearts { z-index:5; }
+  .star { position:absolute; width:2px; height:2px; background:#ffe8a3; border-radius:50%; opacity:.25; animation:twinkle 3s infinite ease-in-out; }
+  @keyframes twinkle { 50% { opacity:.9; transform:scale(1.8); } }
+  .wrap { position:relative; z-index:1; width:min(720px, 100%); margin:auto; padding:28px 20px 48px; }
+  .topline { display:flex; align-items:center; justify-content:center; gap:10px; color:var(--gold); font:11px/1.4 Arial,sans-serif; letter-spacing:4px; text-transform:uppercase; margin:10px 0 36px; }
+  .topline:before,.topline:after { content:""; width:35px; height:1px; background:linear-gradient(90deg,transparent,var(--gold)); }
+  .topline:after { transform:scaleX(-1); }
+  .hero { text-align:center; min-height:78vh; display:flex; flex-direction:column; justify-content:center; align-items:center; }
+  .emblem { width:94px; height:94px; border:1px solid #8c7139; border-radius:50%; display:grid; place-items:center; color:var(--gold2); font-size:39px; box-shadow:0 0 40px #d7ad4530,inset 0 0 20px #d7ad4510; animation:glow 3s ease-in-out infinite; }
+  @keyframes glow { 50% { box-shadow:0 0 58px #d7ad4560,inset 0 0 26px #d7ad4520; } }
+  .eyebrow { color:var(--gold); font:11px Arial,sans-serif; letter-spacing:4px; text-transform:uppercase; margin:30px 0 12px; }
+  h1 { font-size:clamp(42px, 11vw, 76px); font-weight:normal; line-height:1.05; margin:0; letter-spacing:-1px; }
+  h1 span { color:var(--gold); font-style:italic; }
+  .subtitle { color:var(--muted); font:14px/1.8 Arial,sans-serif; max-width:420px; margin:22px auto 28px; }
+  .btn { border:1px solid var(--gold); background:linear-gradient(135deg,#f3d995,#b88b39); color:#100d07; padding:15px 23px; border-radius:2px; font:12px Arial,sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase; cursor:pointer; box-shadow:0 7px 25px #d4aa3c25; transition:transform .2s,filter .2s; }
+  .btn:hover { transform:translateY(-2px); filter:brightness(1.1); }
+  .scrollhint { color:#827b6d; font:10px Arial,sans-serif; letter-spacing:3px; margin-top:44px; }
+  section { margin:30px 0 48px; }
+  .panel { border:1px solid #6e592f; background:linear-gradient(145deg,#171511eF,#0b0b0bf2); padding:clamp(22px,6vw,42px); box-shadow:0 18px 55px #0008; position:relative; }
+  .panel:before { content:""; position:absolute; inset:7px; border:1px solid #c7a04d22; pointer-events:none; }
+  .section-label { color:var(--gold); font:10px Arial,sans-serif; letter-spacing:4px; text-transform:uppercase; text-align:center; }
+  h2 { font-size:clamp(29px,7vw,43px); font-weight:normal; text-align:center; margin:16px 0 20px; }
+  .letter { font-size:17px; line-height:1.95; color:#e5dfd2; white-space:pre-line; }
+  .signature { text-align:right; color:var(--gold); font-size:23px; font-style:italic; margin-top:25px; }
+  .question { text-align:center; padding:22px 0; }
+  .question h2 { margin-bottom:12px; }
+  .question p { color:var(--muted); font:14px/1.8 Arial,sans-serif; }
+  .buttons { display:flex; justify-content:center; flex-wrap:wrap; gap:14px; margin:26px 0 12px; position:relative; min-height:54px; }
+  .yes { min-width:145px; }
+  .no { color:#eee3c9; border:1px solid #655d4b; background:#151411; padding:14px 23px; font:12px Arial,sans-serif; letter-spacing:1px; cursor:pointer; border-radius:2px; transition:transform .18s; }
+  .response { display:none; text-align:center; margin-top:26px; color:var(--gold2); font-size:21px; line-height:1.7; animation:appear .7s ease both; }
+  @keyframes appear { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+  footer { text-align:center; color:#777064; font:10px Arial,sans-serif; letter-spacing:2px; padding:12px 0 20px; }
+  .floating-heart { position:absolute; bottom:-30px; color:var(--gold); animation:floatUp 4.5s linear forwards; text-shadow:0 0 12px #f3cf6c70; }
+  @keyframes floatUp { 0%{transform:translateY(0) rotate(0deg);opacity:0} 10%{opacity:.85} 90%{opacity:.7} 100%{transform:translateY(-105vh) rotate(28deg);opacity:0} }
+  .hidden { display:none !important; }
+  @media (max-width:420px) { .wrap{padding-left:16px;padding-right:16px}.topline{letter-spacing:2px}.letter{font-size:16px}.panel{padding:25px 22px} }
+  @media (prefers-reduced-motion: reduce) { *,*:before,*:after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+<div id="stars" aria-hidden="true"></div>
+<div id="hearts" aria-hidden="true"></div>
+<main class="wrap">
+  <div class="topline">A little piece of my heart</div>
+  <header class="hero">
+    <div class="emblem" aria-hidden="true">♡</div>
+    <p class="eyebrow">A special message for</p>
+    <h1>Dear <span>Anika</span></h1>
+    <p class="subtitle">Some feelings are too beautiful to keep hidden. I made this little place just for you.</p>
+    <button class="btn" id="openLetter">Open your letter&nbsp; ♡</button>
+    <div class="scrollhint">MADE WITH CARE · FROM TUHIN</div>
+  </header>
+
+  <section id="letterSection" class="hidden">
+    <div class="panel">
+      <div class="section-label">Just for you</div>
+      <h2>My Dear Anika</h2>
+      <div class="letter">I may not always find the perfect words, but I want you to know something from my heart.
+
+You bring a special kind of happiness into my world. Even the smallest moments can feel meaningful when I think of you. Your smile, your presence, and the little things that make you who you are mean more to me than I can easily explain.
+
+I don't promise that every day will be perfect. I promise to be honest with you, to respect you, to listen, and to keep choosing kindness as we get to know each other more.
+
+So today, I want to ask you something that means a lot to me…</div>
+      <div class="signature">— Tuhin ♡</div>
+    </div>
+  </section>
+
+  <section id="proposal">
+    <div class="panel question">
+      <div class="section-label">One little question</div>
+      <h2>Will you be mine, <span style="color:var(--gold);font-style:italic">Anika?</span></h2>
+      <p>No pressure—just an honest question from my heart.<br>Whatever your answer, you deserve kindness and respect. ♡</p>
+      <div class="buttons">
+        <button class="btn yes" id="yesBtn">Yes, Tuhin! 💖</button>
+        <button class="no" id="noBtn">Not now 🙈</button>
+      </div>
+      <div class="response" id="yesResponse" role="status">You just made my heart so happy! 💖<br><span style="font-size:15px;color:#d8cba9">Thank you, Anika. Let's make beautiful memories together.</span></div>
+      <div class="response" id="noResponse" role="status">That's okay, Anika. 💛<br><span style="font-size:15px;color:#d8cba9">Thank you for being honest. Your feelings matter, always.</span></div>
+    </div>
+  </section>
+  <footer>CRAFTED WITH ♡ BY TUHIN · JUST FOR ANIKA</footer>
+</main>
+<script>
+  const stars = document.getElementById('stars');
+  for (let i=0; i<65; i++) {
+    const s=document.createElement('span'); s.className='star';
+    s.style.left=(Math.random()*100)+'%'; s.style.top=(Math.random()*100)+'%';
+    s.style.animationDelay=(Math.random()*4)+'s'; s.style.opacity=(Math.random()*.5+.1);
+    stars.appendChild(s);
+  }
+  function burst(count=18) {
+    const layer=document.getElementById('hearts');
+    for(let i=0;i<count;i++){
+      const h=document.createElement('span'); h.className='floating-heart';
+      h.textContent=['♡','♥','✦'][Math.floor(Math.random()*3)];
+      h.style.left=(Math.random()*100)+'%'; h.style.bottom='-30px';
+      h.style.fontSize=(14+Math.random()*22)+'px';
+      h.style.animationDuration=(3.2+Math.random()*2.4)+'s';
+      h.style.animationDelay=(Math.random()*.7)+'s';
+      layer.appendChild(h); setTimeout(()=>h.remove(),6500);
+    }
+  }
+  document.getElementById('openLetter').addEventListener('click',()=>{
+    document.getElementById('letterSection').classList.remove('hidden');
+    document.getElementById('letterSection').scrollIntoView({behavior:'smooth',block:'start'});
+    burst(12);
+  });
+  document.getElementById('yesBtn').addEventListener('click',()=>{
+    document.getElementById('yesResponse').style.display='block';
+    document.getElementById('noResponse').style.display='none';
+    burst(42);
+  });
+  document.getElementById('noBtn').addEventListener('click',()=>{
+    document.getElementById('noResponse').style.display='block';
+    document.getElementById('yesResponse').style.display='none';
+  });
+</script>
+</body>
+</html>
